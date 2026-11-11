@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="JSF FASHION WEAR — everyday style, made simple.">
+  <title>JSF FASHION WEAR | Official Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">NEW SEASON • FRESH STYLES • EVERYDAY COMFORT</div>
+  <header class="header">
+    <a class="brand" href="#home" aria-label="JSF Fashion Wear home">
+      <span class="brand-mark">JSF</span>
+      <span class="brand-name">FASHION <b>WEAR</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" id="cartOpen">Bag <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE NEW EVERYDAY</p>
+        <h1>Wear your<br><em>own story.</em></h1>
+        <p class="hero-text">Easy-to-style fashion essentials designed for your everyday moments.</p>
+        <a class="button button-light" href="#shop">EXPLORE COLLECTION <span>↗</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="hero-circle"></div>
+        <div class="hero-shirt"><span>JSF</span></div>
+        <div class="hero-note">STYLE<br>YOUR<br>WAY.</div>
+        <div class="hero-index">01 / NEW DROP</div>
+      </div>
+    </section>
+
+    <section class="ticker"><span>JSF FASHION WEAR</span> ✳ EVERYDAY STYLE ✳ MADE TO MOVE ✳ JSF FASHION WEAR ✳</section>
+
+    <section class="section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">CURATED FOR YOU</p><h2>Featured collection</h2></div>
+        <p>Simple pieces. Strong style.<br>Find your next favourite.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="All">All items</button>
+        <button class="filter" data-filter="T-Shirts">T-Shirts</button>
+        <button class="filter" data-filter="Oversized">Oversized</button>
+        <button class="filter" data-filter="Essentials">Essentials</button>
+      </div>
+      <div class="products" id="products"></div>
+    </section>
+
+    <section class="statement" id="about">
+      <p class="eyebrow">OUR PHILOSOPHY</p>
+      <h2>Good style doesn't<br>need to shout.</h2>
+      <p>JSF FASHION WEAR is about comfortable pieces, clean looks and confidence in your own style. Start with the essentials and make them yours.</p>
+      <a href="#shop" class="text-link">FIND YOUR FIT ↗</a>
+      <div class="statement-stamp">JSF<br>EST. 2026</div>
+    </section>
+
+    <section class="newsletter">
+      <div><p class="eyebrow">STAY IN THE LOOP</p><h2>Fresh drops.<br>Good energy.</h2></div>
+      <form id="newsletterForm"><label for="email">Get updates about new collections</label><div class="email-row"><input id="email" type="email" placeholder="Your email address" required><button type="submit">JOIN ↗</button></div><small id="newsletterMsg">No spam. Just style updates.</small></form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-top"><a class="brand footer-brand" href="#home"><span class="brand-mark">JSF</span><span class="brand-name">FASHION <b>WEAR</b></span></a><p>Wear your own story.</p></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> JSF FASHION WEAR. All rights reserved.</span><span>Made for everyday style.</span><a href="mailto:hello@jsffashionwear.com">CONTACT US ↗</a></div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-panel">
+      <div class="cart-head"><h2>Your bag</h2><button id="cartClose" aria-label="Close cart">✕</button></div>
+      <div id="cartItems" class="cart-items"><p class="empty">Your bag is currently empty.</p></div>
+      <div class="cart-total"><span>Subtotal</span><strong id="cartTotal">৳0</strong></div>
+      <button class="button button-dark checkout" id="checkout">CONTINUE TO ORDER ↗</button>
+      <p class="cart-hint">Demo store: connect your WhatsApp number before accepting real orders.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
